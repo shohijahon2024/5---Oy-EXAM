@@ -1,0 +1,243 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img{
+  width: 100%;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
+}
+
+.header .logo {
+  font-size: 24px;
+}
+
+.header .auth-buttons button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.header .auth-buttons a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.header .auth-buttons a:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.banner {
+  background-color: #f5ca42;
+  display: flex;
+  padding: 50px;
+  text-align: center;
+  position: relative;
+  height: 260px;
+  overflow: hidden;
+}
+
+.banner h1 {
+  font-size: 68px;
+  margin: 0;
+}
+
+.banner p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.mm {
+  height: 200px;
+  /* width: 200px; */
+  position: absolute;
+  bottom: 100px;
+  right: 10px;
+  font-size: 16px;
+  color: #000;
+  display: flex;
+}
+.letter {
+  display: inline-block;
+  position: relative;
+  animation: float 3s infinite;
+}
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(10px, -10px);
+  }
+  50% {
+    transform: translate(-10px, 10px);
+  }
+  75% {
+    transform: translate(10px, 10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.articles-section {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+}
+
+.box-dlex{
+  display: flex;
+
+}
+
+.box-dlex img{
+  width: 20px;
+  padding: 5px;
+  margin-left: -10px;
+}
+
+.articles-section h2 {
+  margin: 0 0 20px;
+  padding: 10px;
+  font-size: 34px;
+  text-align: left;
+  line-height: 73.67px;
+  color: #fff;
+  margin: 37px 0px 30px 0;
+  font-weight: 400;
+}
+
+.article-box{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+}
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px; 
+}
+
+.article {
+  background-color: #111;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+}
+
+.article img {
+  width: 100%;
+  height: auto;
+}
+
+.article h3 {
+  margin: 10px 0;
+}
+
+.article p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.article .author {
+  font-style: italic;
+  color: #f5ca42;
+}
+
+/* Sign start */
+.signup-container {
+  background-color: #f0c040;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.signup-container img {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.signup-container h2 {
+  margin: 0 0 20px;
+  font-size: 24px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.form-group input[type="password"] {
+  padding-right: 40px;
+}
+
+.form-group .show-password {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.signup-container .login-link {
+  display: block;
+  margin: 20px 0;
+  font-size: 14px;
+}
+
+.signup-container .login-link a {
+  color: #000;
+  text-decoration: none;
+}
+
+.signup-container .login-link a:hover {
+  text-decoration: underline;
+}
+
+.signup-container button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.signup-container button:hover {
+  background-color: #333;
+}

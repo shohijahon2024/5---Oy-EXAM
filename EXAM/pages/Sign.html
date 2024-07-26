@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: #000;
+      }
+    </style>
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <div class="signup-container">
+      <img src="../assets/image 1.svg" alt="Medium Logo" />
+      <h2>Sign Up</h2>
+      <form>
+        <div class="form-group">
+          <input type="text" placeholder="Firstname" required />
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Email" required />
+        </div>
+        <div class="form-group">
+          <input type="password" placeholder="Password" required />
+          <span class="show-password" onclick="togglePassword()"></span>
+        </div>
+        <div class="login-link">
+          Don't you have an account? <a href="../pages/login.html">Login</a>.
+        </div>
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+
+    <script src="../js/reg.js"></script>
+  </body>
+</html>

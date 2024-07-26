@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create New Post</title>
+    <link rel="stylesheet" href="../css/crete.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div>
+          <h2>Dashboard</h2>
+          <div class="profile-card">
+            <p>Ibrokhim Jalalov</p>
+            <p>Author</p>
+          </div>
+        </div>
+        <div class="sign-out">
+          <a href="./Sign.html">Sign Out?</a>
+        </div>
+      </div>
+      <div class="main-content">
+        <h1>Create New Post</h1>
+
+        <form id="postForm">
+          <div class="form-group">
+            <label for="title">Post title</label>
+            <input type="text" id="title" name="post-title" />
+          </div>
+
+          <div class="form-group">
+            <label for="image">Post image</label>
+            <input type="file" id="image" name="post-image" />
+          </div>
+
+          <div class="form-group">
+            <label for="tag">Post tag</label>
+            <input type="text" id="tag" name="post-tag" />
+          </div>
+
+          <div class="form-group">
+            <label for="description">Post description</label>
+            <textarea
+              id="description"
+              name="post-description"
+              required
+            ></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit">Create Post</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="../js/crete.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
